@@ -1,9 +1,9 @@
 //SPDX-License-Identifier: MIT
-pragma solidity ^0.8.17; // Instructing the compiler which solidity version to use
+pragma solidity ^0.8.17; // Instructing the compiler to use solidity version 0.8.17 and above
 
 contract SimpleStorage //every single smart contract has an address
  {
-   uint256 favoritenumber; //initializes the uint256 to solidity's default, zero
+   uint256 favoritenumber; //initializes the uint256 to solidity's default when left blank, zero
    People public person = People({favoritenumber: 24, name: "Delashoo"});// creating a new Person in the struct 
 
    mapping (string => uint256) public nameToFavoriteNumber;
